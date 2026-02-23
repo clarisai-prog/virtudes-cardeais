@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#191022">
+  <meta name="description" content="A Jornada das 3 Âncoras - Prudência, Fortaleza e Temperança para uma vida em graça.">
+  <title>A Jornada das 3 Âncoras</title>
+  
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#7311d4",
+            "primary-dark": "#4d0b8f",
+            gold: "#D4AF37",
+            "gold-accent": "#eebd2b",
+            "background-dark": "#191022",
+            "surface-dark": "#231630",
+          },
+          fontFamily: {
+            display: ["Noto Serif", "serif"],
+            sans: ["Noto Sans", "sans-serif"],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .screen { display: none; }
+    .screen.active { display: grid; }
+    .text-glow { text-shadow: 0 0 20px rgba(238, 189, 43, 0.3); }
+    
+    /* Animações */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in { animation: fadeIn 0.5s ease-out forwards; }
+    
+    /* Scrollbar estilizada para desktop */
+    @media (min-width: 768px) {
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #191022;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #4d0b8f;
+        border-radius: 3px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #7311d4;
+      }
+    }
+  </style>
+</head>
+<body class="bg-background-dark text-slate-100 font-display antialiased selection:bg-primary selection:text-white">
+
+  <!-- App Container - Layout Responsivo: Mobile (stack) | Desktop (split-screen) -->
+  <div id="app" class="w-full min-h-screen">
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#191022">
+  <meta name="description" content="A Jornada das 3 Âncoras - Prudência, Fortaleza e Temperança para uma vida em graça.">
+  <title>A Jornada das 3 Âncoras</title>
+  
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#7311d4",
+            "primary-dark": "#4d0b8f",
+            gold: "#D4AF37",
+            "gold-accent": "#eebd2b",
+            "background-dark": "#191022",
+            "surface-dark": "#231630",
+          },
+          fontFamily: {
+            display: ["Noto Serif", "serif"],
+            sans: ["Noto Sans", "sans-serif"],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .screen { display: none; }
+    .screen.active { display: grid; }
+    .text-glow { text-shadow: 0 0 20px rgba(238, 189, 43, 0.3); }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in { animation: fadeIn 0.5s ease-out forwards; }
+    
+    @media (min-width: 768px) {
+      .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+      .custom-scrollbar::-webkit-scrollbar-track { background: #191022; }
+      .custom-scrollbar::-webkit-scrollbar-thumb { background: #4d0b8f; border-radius: 3px; }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #7311d4; }
+    }
+  </style>
+</head>
+<body class="bg-background-dark text-slate-100 font-display antialiased selection:bg-primary selection:text-white">
+
+  <div id="app" class="w-full min-h-screen">
+
+    <!-- SCREEN: COVER -->
+    <div id="screen-cover" class="screen active fixed inset-0 z-50 bg-background-dark">
+      <!-- Mobile: Full screen | Desktop: Left side image -->
+      <div class="grid grid-cols-1 md:grid-cols-2 h-full w-full">
+        
+        <!-- Left: Hero Image (Mobile: top half, Desktop: full left) -->
+        <div class="relative h-[50vh] md:h-full md:fixed md:left-0 md:top-0 md:w-1/2">
+          <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA1IuZwXAlFCZX3Aj3XVJU7U6K7yg5qAWavMfiJo-bbW0KRZw6a_t_5a_c_XUAQYvlddcNFAUqHJkdYzTl4Dd58tgR7O5qMJDx_kLCIUMQtx21DrMI8m1Ipdcubi09d9eoA7s0xGud6NmFIudXcMuzzsV1TljvSiJBrJAF70LcmoaSqCdOhxeVdAIes0HJyYk4nHvFi2kDt20m6vf6AqJgblSxXtyUs9jfoOXp1EU1g962WL9EzwxIRMXJRowZEuYD3Kv2CdIBhdA1A');">
+            <div class="absolute inset-0 bg-gradient-to-b from-background-dark/60 via-transparent to-background-dark md:bg-gradient-to-r md:from-transparent md:to-background-dark/90"></div>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="md:col-start-2 flex flex-col justify-center items-center px-6 py-8 md:px-12 md:py-16 h-[50vh] md:h-screen overflow-y-auto">
+          <div class="text-center space-y-6 max-w-md animate-fade-in">
+            <div class="opacity-60 text-gold-accent">
+              <span class="material-symbols-outlined text-5xl">anchor</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight text-gold-accent text-glow">
+              A Jornada das<br><span class="italic font-normal text-2xl md:text-3xl">3 Âncoras</span>
+            </h1>
+            <p class="text-sm md:text-base text-slate-400 italic">
+              Prudência e Justiça • Fortaleza • Temperança
+            </p>
+            
+            <div class="pt-4 space-y-3">
+              <button onclick="nav('intro')" class="w-full md:w-auto md:min-w-[280px] h-14 flex items-center justify-center rounded-lg bg-white/5 border border-gold-accent/30 hover:bg-gold-accent/10 transition-all group">
+                <span class="text-gold-accent font-sans font-bold text-lg uppercase tracking-wide mr-2 group-hover:mr-4 transition-all">Iniciar Jornada</span>
+                <span class="material-symbols-outlined text-gold-accent">arrow_forward</span>
+              </button>
+              
+              <button id="install-btn" class="hidden w-full md:w-auto md:min-w-[280px] h-14 flex items-center justify-center rounded-lg bg-primary/20 border border-primary/50 hover:bg-primary/30 transition-all">
+                <span class="text-white font-sans font-bold text-lg uppercase tracking-wide mr-2">Instalar App</span>
+                <span class="material-symbols-outlined text-white">download</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN: INTRODUCTION -->
+    <div id="screen-intro" class="screen fixed inset-0 z-40 bg-background-dark">
+      <div class="grid grid-cols-1 md:grid-cols-2 h-full w-full">
+        
+        <!-- Left: Image (Desktop only) -->
+        <div class="hidden md:block md:fixed md:left-0 md:top-0 md:w-1/2 md:h-full">
+          <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDwJUrXVNDW2kMABzSb2606NjzyemGoqbt-7awpgn1vzMrtp0F2UJvprUozEdQzCVPjPoJcV3JWD_GFeYEV6xRQsEvsE52bKVFuOv6vKuzd4xMZbxcdXyTl8nhlWrLKeon8oCj8TL0GdVEJcM4x-X3s5tkyJcDkdg25zSaNTq4Mz4VPw72Y50kEPYZjebY4Et_ux7WYxOuzl4QO4kuDIf85j9FC1-0xBXVIODV79SqC7IBYNlkHpyixU94FEraStBqFa_Gck5BTJ2hF');">
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent to-background-dark"></div>
+          </div>
+        </div>
+
+        <!-- Right: Scrollable Content -->
+        <div class="md:col-start-2 h-screen overflow-y-auto custom-scrollbar">
+          <!-- Mobile Header -->
+          <div class="md:hidden flex items-center justify-between p-4 sticky top-0 bg-background-dark/95 backdrop-blur-sm border-b border-white/5 z-10">
+            <button onclick="nav('cover')" class="material-symbols-outlined text-white p-2">arrow_back</button>
+            <h2 class="text-sm font-sans font-medium uppercase tracking-wide opacity-80">Introdução</h2>
+            <span class="material-symbols-outlined text-gold-accent">anchor</span>
+          </div>
+
+          <!-- Desktop Header -->
+          <div class="hidden md:flex items-center justify-between p-6 sticky top-0 bg-background-dark/95 backdrop-blur-sm border-b border-white/5 z-10">
+            <button onclick="nav('cover')" class="flex items-center gap-2 text-white hover:text-gold-accent transition-colors">
+              <span class="material-symbols-outlined">arrow_back</span>
+              <span class="font-sans text-sm">Voltar</span>
+            </button>
+            <h2 class="text-sm font-sans font-medium uppercase tracking-wide opacity-80">Introdução</h2>
+            <span class="material-symbols-outlined text-gold-accent">anchor</span>
+          </div>
+
+          <div class="p-6 md:p-10 space-y-8 max-w-2xl">
+            <div class="text-center md:text-left animate-fade-in">
+              <p class="text-xs text-gold-accent mb-3">📖 Mateus 11, 28</p>
+              <h1 class="text-3xl md:text-4xl font-bold mb-3">Bem-vindo à sua Jornada</h1>
+              <p class="text-slate-400 italic text-lg">A Fundação de Graça</p>
+            </div>
+
+            <div class="bg-surface-dark/50 p-6 rounded-xl border border-gold-accent/20 animate-fade-in">
+              <p class="text-slate-300 leading-relaxed">Solte o peso do perfeccionismo. Um propósito ou rotina espiritual sem a base humana desmorona rápido. Aqui, você não vai encontrar cobranças, mas sim as ferramentas para firmar a sua alma em paz.</p>
+            </div>
+
+            <blockquote class="border-l-4 border-primary pl-6 italic text-slate-300 leading-relaxed">
+              "A maioria de nós desiste de propósitos e rotinas porque tentamos nos apoiar apenas no nosso próprio esforço, e isso gera uma exaustão terrível. Quando falhamos, a culpa nos esmaga. A 'Jornada das 3 Âncoras' nasceu para libertar você dessa cultura de performance."
+            </blockquote>
+
+            <div class="bg-surface-dark p-6 rounded-xl border border-white/5">
+              <h3 class="text-gold-accent text-sm font-bold uppercase mb-3 flex items-center gap-2">
+                <span class="material-symbols-outlined">lightbulb</span> Preparação
+              </h3>
+              <p class="text-slate-300 leading-relaxed">Feche os olhos por 10 segundos antes de avançar e repita mentalmente: <strong class="text-white">"Eu abandono a culpa e aceito construir a minha vida na graça."</strong></p>
+            </div>
+
+            <div class="bg-gradient-to-br from-primary to-primary-dark p-6 rounded-xl text-white">
+              <h3 class="text-xs font-bold uppercase tracking-widest mb-4 opacity-80">As 3 Âncoras</h3>
+              <div class="space-y-4">
+                <div class="flex items-start gap-4">
+                  <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gold-accent/20 flex items-center justify-center text-gold-accent font-bold">1</span>
+                  <div>
+                    <h4 class="font-bold text-lg">Prudência e Justiça</h4>
+                    <p class="text-sm opacity-80">A âncora que traz a Ordem da Vida</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gold-accent/20 flex items-center justify-center text-gold-accent font-bold">2</span>
+                  <div>
+                    <h4 class="font-bold text-lg">Fortaleza</h4>
+                    <p class="text-sm opacity-80">A âncora que ensina a Ciência de Levantar</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gold-accent/20 flex items-center justify-center text-gold-accent font-bold">3</span>
+                  <div>
+                    <h4 class="font-bold text-lg">Temperança</h4>
+                    <p class="text-sm opacity-80">A âncora que traz o Domínio do Conforto</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 pb-8">
+              <button onclick="nav('cap1')" class="w-full h-14 flex items-center justify-center rounded-lg bg-white text-black font-bold hover:bg-gold-accent transition-all">
+                <span class="mr-2">Começar Jornada</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN: CAP 1 (Âncora 1 - Prudência e Justiça) -->
+    <div id="screen-cap1" class="screen fixed inset-0 z-30 bg-background-dark">
+      <div class="grid grid-cols-1 md:grid-cols-2 h-full w-full">
+        
+        <!-- Left: Video (Mobile: top, Desktop: fixed left) -->
+        <div class="h-[35vh] md:h-full md:fixed md:left-0 md:top-0 md:w-1/2 bg-black relative">
+          <video 
+            id="video-1" 
+            class="w-full h-full object-cover"
+            poster="https://lh3.googleusercontent.com/aida-public/AB6AXuAKd4rQ1vxk8myL5y6fW5dkWyWONT7lSMZvm7ZzgbOdFoKwhJbso-1deuUM7aV1gqH2z3cwlmFOasLJ3jwHjP2xku6ujinfIKRVM17OgbnZA7_IMTQU1wHnGp4-0wVefS_9GkCM-0nImGfpw370kAS8CN-mM9llDhUe9Obxseq8MhrNNKG92ie81Oc-tYsh_pWg7YufCfD4NdMJsqe4QhtyvguY5MungsqtYvEqyy8ghove5rTE-Ijsk5Ma02HXVJohAxLUVUziK02M"
+            playsinline
+            preload="metadata"
+          >
+            <source src="videos/video-1.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+          <div id="video-1-overlay" class="absolute inset-0 bg-black/40 flex items-center justify-center cursor-pointer transition-opacity duration-300" onclick="playVideo('video-1')">
+            <button class="size-16 md:size-20 rounded-full bg-primary/90 flex items-center justify-center text-white hover:bg-primary hover:scale-110 transition-all shadow-lg">
+              <span class="material-symbols-outlined text-3xl md:text-4xl">play_arrow</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Scrollable Content -->
+        <div class="md:col-start-2 h-[65vh] md:h-screen overflow-y-auto custom-scrollbar">
+          <!-- Mobile Header -->
+          <div class="md:hidden flex items-center justify-between p-4 sticky top-0 bg-background-dark/95 backdrop-blur-sm border-b border-white/5 z-10">
+            <button onclick="nav('intro')" class="material-symbols-outlined text-white p-2">arrow_back</button>
+            <h2 class="text-sm font-sans font-medium uppercase tracking-wide opacity-80">Âncora 1</h2>
+            <span class="text-xs font-bold px-2 py-1 rounded-full bg-primary/20 text-primary">1/3</span>
+          </div>
+
+          <!-- Desktop Header -->
+          <div class="hidden md:flex items-center justify-between p-6 sticky top-0 bg-background-dark/95 backdrop-blur-sm border-b border-white/5 z-10">
+            <button onclick="nav('intro')" class="flex items-center gap-2 text-white hover:text-gold-accent transition-colors">
+              <span class="material-symbols-outlined">arrow_back</span>
+              <span class="font-sans text-sm">Voltar</span>
+            </button>
+            <h2 class="text-sm font-sans font-medium uppercase tracking-wide opacity-80">Âncora 1 de 3</h2>
+            <div class="flex gap-1">
+              <span class="w-2 h-2 rounded-full bg-gold-accent"></span>
+              <span class="w-2 h-2 rounded-full bg-white/20"></span>
+              <span class="w-2 h-2 rounded-full bg-white/20"></span>
+            </div>
+          </div>
+
+          <div class="p-6 md:p-10 space-y-8 max-w-2xl">
+            <div class="animate-fade-in">
+              <p class="text-xs md:text-sm text-gold-accent mb-3">📖 Sabedoria 8, 7</p>
+              <h1 class="text-3xl md:text-4xl font-bold mb-2">Prudência e Justiça</h1>
+              <p class="text-slate-400 italic text-lg">A Ordem da Vida</p>
+            </div>
+
+            <div class="bg-surface-dark/50 p-6 rounded-xl border border-gold-accent/20 animate-fade-in">
+              <p class="text-slate-300 leading-relaxed">A verdadeira ordem na vida espiritual nasce do amor, não da obrigação. Priorizar a oração não é uma regra a mais para te cansar, mas um ato de prudência para dar descanso ao seu coração.</p>
+            </div>
+
+            <blockquote class="border-l-4 border-primary pl-6 italic text-slate-300 leading-relaxed">
+              "Muitas vezes, tentamos rezar usando apenas as 'sobras' do nosso tempo. Quando chega a noite, e estamos exaustos, dormimos no meio da leitura e acordamos com aquele peso terrível de dever não cumprido. Livre-se dessa culpa. A Prudência é a inteligência sabendo a hora de agir, e a Justiça é dar a Deus o espaço que Lhe é devido, sem pressa. Não trate o seu encontro com Ele como um peso, mas como um refúgio."
+            </blockquote>
+
+            <div class="bg-surface-dark p-6 rounded-xl border border-white/5">
+              <h3 class="text-gold-accent text-sm font-bold uppercase mb-3 flex items-center gap-2">
+                <span class="material-symbols-outlined">lightbulb</span> Ação Prática
+              </h3>
+              <p class="text-slate-300 leading-relaxed">Pegue a agenda do seu celular e bloqueie com carinho <strong class="text-white">15 minutos</strong> do seu dia para Deus. Trate esse encontro como o seu compromisso inadiável de descanso.</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-primary to-primary-dark p-6 rounded-xl text-white">
+              <h3 class="text-xs font-bold uppercase tracking-widest mb-3 opacity-80">Momento de Reflexão</h3>
+              <h4 class="text-xl font-bold mb-3">Ordene sua vida em paz</h4>
+              <p class="text-sm mb-6 opacity-90">Feche os olhos por 10 segundos e repita mentalmente: "Eu abandono a culpa e aceito construir a minha vida na graça."</p>
+              <button onclick="markCompleted(this)" class="w-full py-4 bg-white/20 hover:bg-white/30 rounded-lg font-bold flex items-center justify-center gap-2 transition-all">
+                <span class="material-symbols-outlined">check_circle</span> Concluído
+              </button>
+            </div>
+
+            <div class="pt-4 pb-8 flex justify-end">
+              <button onclick="nav('cap2')" class="px-8 py-4 bg-white text-black font-bold rounded-full flex items-center gap-2 hover:bg-gold-accent transition-all">
+                Próxima Âncora <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN: CAP 2 (Âncora 2 - Fortaleza) -->
+    <div id="screen-cap2" class="screen fixed inset-0 z-20 bg-background-dark">
+      <div class="grid grid-cols-1 md:grid-cols-2 h-full w-full">
+        
+        <!-- Left: Video -->
+        <div class="h-[35vh] md:h-full md:fixed md:left-0 md:top-0 md:w-1/2 bg-black relative">
+          <video 
+            id="video-2" 
+            class="w-full h-full object-cover"
+            poster="https://lh3.googleusercontent.com/aida-public/AB6AXuCEAUhIoaEs23JN_0ZcqyjDcn4_DZFg2dgEv_mCPiSPDk5_xcPOwK01JfRHaHDUI5BKhHu7jGvXy9NSdCroJE5BnWJ4HY-wc01q4oA0J9V02KdwFkep7wH24SgMu8eUiH9e6-WdCnnBjmx_qv97z_xtWu9wfSote3yNQed12YrInsaO_kAijBUCP6aQtjPoSQ2SPvnhfj7fNVOG9LI1dJ5VhA1htkMIUy3TyxU3j1p9nMqhJ-LC6M2tmEDKHz0cDbqE8qwHnZB18b34"
+            playsinline
+            preload="metadata"
+          >
+            <source src="videos/video-2.mp4" type="video/mp4">
+          </video>
+          <div id="video-2-overlay" class="absolute inset-0 bg-black/40 flex items-center justify-center cursor-pointer transition-opacity duration-300" onclick="playVideo('video-2')">
+            <button class="size-16 md:size-20 rounded-full bg-primary/90 flex items-center justify-center text-white hover:bg-primary hover:scale-110 transition-all shadow-lg">
+              <span class="material-symbols-outlined text-3xl md:text-4xl">play_arrow</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="md:col-start-2 h-[65vh] md:h-screen overflow-y-auto custom-scrollbar">
+          <div class="md:hidden flex items-center justify-between p-4 sticky top-0 bg-background-dark/95 backdrop-blur-sm border-b border-white/5 z-10">
+            <button onclick="nav('cap1')" class="material-symbols-outlined text-white p-2">arrow_back</button>
+            <h2 class="text-sm font-sans font-medium uppercase tracking-wide opacity-80">Âncora 2</h2>
+            <span class="text-xs font-bold px-2 py-1 rounded-full bg-primary/20 text-primary">2/3</span>
+          </div>
+
+          <div class="hidden md:flex items-center justify-between p-6 sticky top-0 bg-background-dark/95 backdrop-blur-sm border-b border-white/5 z-10">
+            <button onclick="nav('cap1')" class="flex items-center gap-2 text-white hover:text-gold-accent transition-colors">
+              <span class="material-symbols-outlined">arrow_back</span>
+              <span class="font-sans text-sm">Voltar</span>
+            </button>
+            <h2 class="text-sm font-sans font-medium uppercase tracking-wide opacity-80">Âncora 2 de 3</h2>
+            <div class="flex gap-1">
+              <span class="w-2 h-2 rounded-full bg-white/20"></span>
+              <span class="w-2 h-2 rounded-full bg-gold-accent"></span>
+              <span class="w-2 h-2 rounded-full bg-white/20"></span>
+            </div>
+          </div>
+
+          <div class="p-6 md:p-10 space-y-8 max-w-2xl">
+            <div class="animate-fade-in">
+              <p class="text-xs md:text-sm text-gold-accent mb-3">📖 Provérbios 24, 16</p>
+              <h1 class="text-3xl md:text-4xl font-bold mb-2 text-gold-accent">Fortaleza</h1>
+              <p class="text-slate-400 italic text-lg">A Ciência de Levantar</p>
+            </div>
+
+            <div class="bg-surface-dark/50 p-6 rounded-xl border border-gold-accent/20 animate-fade-in">
+              <p class="text-slate-300 leading-relaxed">A santidade não é ser impecável e nunca cair. A grande mentira do perfeccionismo é fazer você desistir no primeiro tropeço. A fortaleza é ter a coragem suave de se levantar rápido.</p>
+            </div>
+
+            <blockquote class="border-l-4 border-gold pl-6 italic text-slate-300 leading-relaxed">
+              "No atrito do dia a dia, é natural que a gente tropece. Digamos que você prometeu cortar um hábito ruim, mas teve um dia péssimo e fraquejou. Imediatamente a voz da acusação grita: 'Você arruinou tudo, desista'. Não aceite essa mentira. A Fortaleza não é a ausência de erros, é a ciência de levantar mais rápido. Deus não é um contador anotando seus débitos."
+            </blockquote>
+
+            <div class="bg-surface-dark p-6 rounded-xl border border-white/5">
+              <h3 class="text-gold-accent text-sm font-bold uppercase mb-3 flex items-center gap-2">
+                <span class="material-symbols-outlined">lightbulb</span> Ação Prática
+              </h3>
+              <p class="text-slate-300 leading-relaxed">Se você escorregar em algum propósito hoje, <strong class="text-white">não se culpe</strong> e nem tente compensar com sacrifícios pesados. Apenas recomece imediatamente com o coração leve.</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-primary to-primary-dark p-6 rounded-xl text-white">
+              <h3 class="text-xs font-bold uppercase tracking-widest mb-3 opacity-80">Momento de Reflexão</h3>
+              <h4 class="text-xl font-bold mb-3">Recomece sem culpa</h4>
+              <p class="text-sm mb-6 opacity-90">Respire fundo e diga: "Eu me perdoo. Deus não está contando meus erros. Vou recomeçar agora com leveza."</p>
+              <button onclick="markCompleted(this)" class="w-full py-4 bg-white/20 hover:bg-white/30 rounded-lg font-bold flex items-center justify-center gap-2 transition-all">
+                <span class="material-symbols-outlined">check_circle</span> Concluído
+              </button>
+            </div>
+
+            <div class="pt-4 pb-8 flex justify-end">
+              <button onclick="nav('cap3')" class="px-8 py-4 bg-white text-black font-bold rounded-full flex items-center gap-2 hover:bg-gold-accent transition-all">
+                Próxima Âncora <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN: CAP 3 (Âncora 3 - Temperança) -->
+    <div id="screen-cap3" class="screen fixed inset-0 z-10 bg-background-dark">
+      <div class="grid grid-cols-1 md:grid-cols-2 h-full w-full">
+        
+        <!-- Left: Video -->
+        <div class="h-[35vh] md:h-full md:fixed md:left-0 md:top-0 md:w-1/2 bg-black relative">
+          <video 
+            id="video-3" 
+            class="w-full h-full object-cover"
+            poster="https://lh3.googleusercontent.com/aida-public/AB6AXuA9pn2Il3sfnynRNprwcSWw3AaikAPjqc2rhcz6gdtqKcImUapzj0WIanISzHdbpmirjh0fu4TUjoAADyU9gcuajQSQID-rz7tQWTj4xxY8yBruxWZPLQ4UZhT-Xrhj8mPjC6BC8Mtms7N3iAC9NpKZFwfPCP29URJLt2emvF3dYTv_1jCKXx3exEGMpcJclfYlOqM-xjb0sa54v1sCi6zeZFeBj4_RQPqUc8peJDfFiWZUoJnS9QFQB2QdYiyuwbjhjO3PUzxH71sq"
+            playsinline
+            preload="metadata"
+          >
+            <source src="videos/video-3.mp4" type="video/mp4">
+          </video>
+          <div id="video-3-overlay" class="absolute inset-0 bg-black/40 flex items-center justify-center cursor-pointer transition-opacity duration-300" onclick="playVideo('video-3')">
+            <button class="size-16 md:size-20 rounded-full bg-primary/90 flex items-center justify-center text-white hover:bg-primary hover:scale-110 transition-all shadow-lg">
+              <span class="material-symbols-outlined text-3xl md:text-4xl">play_arrow</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="md:col-start-2 h-[65vh] md:h-screen overflow-y-auto custom-scrollbar">
+          <div class="md:hidden flex items-center justify-between p-4 sticky top-0 bg-background-dark/95 backdrop-blur-sm border-b border-white/5 z-10">
+            <button onclick="nav('cap2')" class="material-symbols-outlined text-white p-2">arrow_back</button>
+            <h2 class="text-sm font-sans font-medium uppercase tracking-wide opacity-80">Âncora 3</h2>
+            <span class="text-xs font-bold px-2 py-1 rounded-full bg-primary/20 text-primary">3/3</span>
+          </div>
+
+          <div class="hidden md:flex items-center justify-between p-6 sticky top-0 bg-background-dark/95 backdrop-blur-sm border-b border-white/5 z-10">
+            <button onclick="nav('cap2')" class="flex items-center gap-2 text-white hover:text-gold-accent transition-colors">
+              <span class="material-symbols-outlined">arrow_back</span>
+              <span class="font-sans text-sm">Voltar</span>
+            </button>
+            <h2 class="text-sm font-sans font-medium uppercase tracking-wide opacity-80">Âncora 3 de 3</h2>
+            <div class="flex gap-1">
+              <span class="w-2 h-2 rounded-full bg-white/20"></span>
+              <span class="w-2 h-2 rounded-full bg-white/20"></span>
+              <span class="w-2 h-2 rounded-full bg-gold-accent"></span>
+            </div>
+          </div>
+
+          <div class="p-6 md:p-10 space-y-8 max-w-2xl">
+            <div class="animate-fade-in">
+              <p class="text-xs md:text-sm text-gold-accent mb-3">📖 1 Coríntios 9, 25</p>
+              <h1 class="text-3xl md:text-4xl font-bold mb-2">Temperança</h1>
+              <p class="text-slate-400 italic text-lg">O Domínio do Conforto</p>
+            </div>
+
+            <div class="bg-surface-dark/50 p-6 rounded-xl border border-gold-accent/20 animate-fade-in">
+              <p class="text-slate-300 leading-relaxed">Vivemos na era do excesso de informações, telas e confortos. A temperança é o freio carinhoso da alma. Pequenas pausas e pequenos 'nãos' fortalecem a liberdade do nosso espírito.</p>
+            </div>
+
+            <blockquote class="border-l-4 border-gold pl-6 italic text-slate-300 leading-relaxed">
+              "A Temperança não é uma privação triste, é o freio de mão da nossa alma. Quem não consegue dizer um simples 'não' para uma notificação de celular, dificilmente terá músculos espirituais para resistir a tentações maiores. Ensine ao seu corpo, em pequenas coisas, que quem dá as ordens é o seu espírito amparado pela graça."
+            </blockquote>
+
+            <div class="bg-surface-dark p-6 rounded-xl border border-white/5">
+              <h3 class="text-gold-accent text-sm font-bold uppercase mb-3 flex items-center gap-2">
+                <span class="material-symbols-outlined">lightbulb</span> Ação Prática
+              </h3>
+              <p class="text-slate-300 leading-relaxed">Atrase um prazer legítimo com leveza hoje. Quando for beber água, coloque o copo na mesa e espere <strong class="text-white">um minuto</strong> antes de beber, usando esse tempo apenas para respirar e agradecer.</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-primary to-primary-dark p-6 rounded-xl text-white">
+              <h3 class="text-xs font-bold uppercase tracking-widest mb-3 opacity-80">Momento de Reflexão</h3>
+              <h4 class="text-xl font-bold mb-3">Treine a sua liberdade</h4>
+              <p class="text-sm mb-6 opacity-90">O pequeno 'não' de hoje fortalece o seu espírito para os grandes desafios de amanhã. Quem manda na sua vida é você, pela graça de Deus.</p>
+              <button onclick="markCompleted(this)" class="w-full py-4 bg-white text-primary font-bold rounded-lg flex items-center justify-center gap-2 hover:bg-gold-accent hover:text-black transition-all">
+                <span class="material-symbols-outlined">check_circle</span> Concluído
+              </button>
+            </div>
+
+            <div class="pt-4 pb-8 flex justify-end">
+              <button onclick="nav('conclusion')" class="px-8 py-4 bg-gold-accent text-black font-bold rounded-full flex items-center gap-2 hover:bg-white transition-all">
+                Concluir Jornada <span class="material-symbols-outlined">done_all</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN: CONCLUSION -->
+    <div id="screen-conclusion" class="screen fixed inset-0 z-0 bg-background-dark">
+      <div class="grid grid-cols-1 md:grid-cols-2 h-full w-full">
+        
+        <!-- Left: Image -->
+        <div class="hidden md:block md:fixed md:left-0 md:top-0 md:w-1/2 md:h-full">
+          <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDwJUrXVNDW2kMABzSb2606NjzyemGoqbt-7awpgn1vzMrtp0F2UJvprUozEdQzCVPjPoJcV3JWD_GFeYEV6xRQsEvsE52bKVFuOv6vKuzd4xMZbxcdXyTl8nhlWrLKeon8oCj8TL0GdVEJcM4x-X3s5tkyJcDkdg25zSaNTq4Mz4VPw72Y50kEPYZjebY4Et_ux7WYxOuzl4QO4kuDIf85j9FC1-0xBXVIODV79SqC7IBYNlkHpyixU94FEraStBqFa_Gck5BTJ2hF');">
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent to-background-dark"></div>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="md:col-start-2 h-screen overflow-y-auto custom-scrollbar flex flex-col justify-center">
+          <div class="md:hidden flex items-center justify-between p-4 sticky top-0 bg-background-dark/95 backdrop-blur-sm border-b border-white/5 z-10">
+            <button onclick="nav('cap3')" class="material-symbols-outlined text-white p-2">arrow_back</button>
+            <h2 class="text-sm font-sans font-medium uppercase tracking-wide opacity-80">Conclusão</h2>
+            <button onclick="nav('cover')" class="material-symbols-outlined text-gold-accent">close</button>
+          </div>
+
+          <div class="hidden md:flex items-center justify-between p-6 sticky top-0 bg-background-dark/95 backdrop-blur-sm border-b border-white/5 z-10">
+            <button onclick="nav('cap3')" class="flex items-center gap-2 text-white hover:text-gold-accent transition-colors">
+              <span class="material-symbols-outlined">arrow_back</span>
+              <span class="font-sans text-sm">Voltar</span>
+            </button>
+            <h2 class="text-sm font-sans font-medium uppercase tracking-wide opacity-80">Conclusão</h2>
+            <button onclick="nav('cover')" class="material-symbols-outlined text-gold-accent hover:text-white transition-colors">close</button>
+          </div>
+
+          <div class="p-6 md:p-12 flex-1 flex flex-col justify-center items-center text-center max-w-2xl mx-auto">
+            <div class="p-6 rounded-full bg-gold-accent/10 border border-gold-accent/30 mb-8 animate-fade-in">
+              <span class="material-symbols-outlined text-6xl text-gold-accent">verified</span>
+            </div>
+            
+            <div class="space-y-6 mb-12 animate-fade-in">
+              <h1 class="text-4xl md:text-5xl font-bold text-gold-accent italic leading-tight">
+                Parabéns por<br>completar sua jornada
+              </h1>
+              <p class="text-lg text-slate-300 max-w-md mx-auto">
+                Que as 3 Âncoras — Prudência e Justiça, Fortaleza e Temperança — firme sua alma e tragam paz à sua rotina.
+              </p>
+            </div>
+
+            <div class="w-full max-w-md space-y-4 animate-fade-in">
+              <button onclick="downloadPDFWithLoader(this)" class="w-full bg-surface-dark border border-gold-accent/30 rounded-xl p-5 flex items-center gap-4 text-left hover:bg-white/5 hover:border-gold-accent transition-all group">
+                <div class="size-14 rounded-xl bg-gold-accent/10 flex items-center justify-center text-gold-accent group-hover:scale-110 transition-transform">
+                  <span class="material-symbols-outlined text-2xl">download</span>
+                </div>
+                <div class="flex-1">
+                  <h3 class="font-bold text-white text-lg">Baixar Jornada</h3>
+                  <p class="text-sm text-slate-400">Resumo das 3 Âncoras em PDF</p>
+                </div>
+                <span class="material-symbols-outlined text-slate-500 group-hover:text-gold-accent transition-colors">chevron_right</span>
+              </button>
+
+              <button onclick="nav('cover')" class="w-full py-4 border border-white/20 rounded-xl text-white font-bold hover:bg-white/5 transition-all">
+                Voltar ao Início
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="module">
+    // Navegação entre telas
+    window.nav = function(screenId) {
+      document.querySelectorAll('.screen').forEach(s => {
+        s.classList.remove('active');
+        s.style.opacity = '0';
+      });
+      
+      const target = document.getElementById('screen-' + screenId);
+      if (target) {
+        target.classList.add('active');
+        // Pequena animação de fade
+        requestAnimationFrame(() => {
+          target.style.transition = 'opacity 0.3s ease';
+          target.style.opacity = '1';
+        });
+        
+        // Pausar vídeos quando sair da tela
+        document.querySelectorAll('video').forEach(video => {
+          video.pause();
+          video.currentTime = 0;
+          const overlayId = video.id + '-overlay';
+          const overlay = document.getElementById(overlayId);
+          if (overlay) overlay.style.opacity = '1';
+          video.removeAttribute('controls');
+        });
+        
+        // Scroll to top
+        target.querySelector('.custom-scrollbar')?.scrollTo(0, 0);
+      }
+    };
+
+    // Controle de vídeos
+    window.playVideo = function(videoId) {
+      const video = document.getElementById(videoId);
+      const overlay = document.getElementById(videoId + '-overlay');
+      
+      if (video && video.paused) {
+        video.play().then(() => {
+          overlay.style.opacity = '0';
+          video.setAttribute('controls', 'true');
+        }).catch(err => {
+          console.warn('Erro ao reproduzir vídeo:', err);
+        });
+      }
+    };
+
+    // Marcar como concluído
+    window.markCompleted = function(btn) {
+      btn.classList.remove('bg-white/20', 'bg-white', 'text-primary');
+      btn.classList.add('bg-green-500/20', 'text-green-400', 'border', 'border-green-500/50');
+      btn.innerHTML = '<span class="material-symbols-outlined">task_alt</span> Concluído com Sucesso';
+      btn.disabled = true;
+    };
+
+    // Download PDF com lazy load do módulo
+    window.downloadPDFWithLoader = async function(btnElement) {
+      try {
+        const { downloadPDF } = await import('./src/pdfGenerator.js');
+        await downloadPDF(btnElement);
+      } catch (err) {
+        console.error('Erro ao carregar gerador de PDF:', err);
+        alert('Erro ao carregar o módulo de PDF. Verifique sua conexão.');
+      }
+    };
+
+    // PWA Service Worker
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(reg => console.log('[PWA] Service Worker registrado'))
+          .catch(err => console.log('[PWA] Erro no SW:', err));
+      });
+    }
+
+    // PWA Install Prompt
+    let deferredPrompt;
+    const installBtn = document.getElementById('install-btn');
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      if (installBtn) installBtn.classList.remove('hidden');
+    });
+
+    if (installBtn) {
+      installBtn.addEventListener('click', async () => {
+        if (deferredPrompt) {
+          deferredPrompt.prompt();
+          const { outcome } = await deferredPrompt.userChoice;
+          console.log(`[PWA] Usuário ${outcome === 'accepted' ? 'aceitou' : 'recusou'} a instalação`);
+          deferredPrompt = null;
+          installBtn.classList.add('hidden');
+        }
+      });
+    }
+
+    // Inicialização
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('[App] Jornada das 3 Âncoras iniciada');
+    });
+  </script>
+</body>
+</html>
